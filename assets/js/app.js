@@ -2,7 +2,6 @@ function LeapYear(number) {
     if (isNaN(number)) {
         return NaN;
     }
-
     return number % 4 === 0;
 }
 
@@ -10,7 +9,6 @@ function IMT(mass, height) {
     if (isNaN(mass) || isNaN(height)) {
         return NaN;
     }
-
     return mass / (height ** 2);
 }
 let Button = document.getElementById("calcB");
@@ -23,7 +21,7 @@ let InputHeight = document.getElementById("height");
 let result2 = document.getElementById("resultIMT");
 
 Button.addEventListener("click", function() {
-    if(!isNaN(LeapYer(Input.value))){
+    if(!isNaN(LeapYear(Input.value))){
         if(Input.value){
             if(LeapYer(Input.value)){
                 result.textContent='Год високосный'
