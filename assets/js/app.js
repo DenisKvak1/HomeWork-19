@@ -2,7 +2,10 @@ function LeapYear(number) {
     if (isNaN(number)) {
         return NaN;
     }
-    return number % 4 === 0;
+    if(number%400 ==0|| number%100!=0 ){
+        return number % 4 === 0;
+    }
+        return false;
 }
 
 function IMT(mass, height) {
