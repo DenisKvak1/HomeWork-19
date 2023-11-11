@@ -9,15 +9,24 @@
 </head>
 <body>
     <div class="container">
-        <div id="IMT">
-            <input id="mass" class="form-control mt-3" type="text" placeholder="Масса (кг)">
-            <input id="height" class="form-control mt-3" type="text" placeholder="Рост (см)">
-
-            <button id="calcA" class="btn btn-primary mt-3">Узнай ответ xD</button>
-            <h4 id="resultIMT" class="mt-1"></h4>
+        <div id="IMT" class="mt-5">
+            <h2>Индекс массы тела:</h2>
+            <div class="input-group mb-3 mt-4">
+                <span class="input-group-text" id="basic-addon1">Ваш рост(м):</span>
+                <input id="height" class="form-control " type="text">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Ваш вес(кг):</span>
+                <input id="mass" class="form-control " type="text" >
+            </div>
+            <button id="calcA" class="btn btn-primary mb-2 w-100">Рассчитать</button>
+            <div>
+                <h4 id="resultIMT2"></h4>
+                <h4 id="resultIMT" class="mt-1"></h4>
+            </div>
         </div>
-        <div>
-            <input id="inputValue" class="form-control mt-3" type="text" placeholder="Номер года">
+        <div class="mt-5">
+            <input id="inputValue" class="form-control" type="text" placeholder="Номер года">
             <button id="calcB" class="btn btn-primary mt-3">Узнай ответ xD</button>
             <h4 id="result" class="mt-1"></h4>
         </div>
