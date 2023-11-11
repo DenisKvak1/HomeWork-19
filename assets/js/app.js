@@ -1,21 +1,17 @@
-function LeapYer(number) {
-    if(!isNaN(number)){
-        if(number%4==0){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-    else{
+function LeapYear(number) {
+    if (isNaN(number)) {
         return NaN;
     }
+
+    return number % 4 === 0;
 }
-function IMT(mass,height) {
-    if(!isNaN(mass)&&!isNaN(height)){
-        return mass/(height**2);
-    }
+
+function IMT(mass, height) {
+    if (isNaN(mass) || isNaN(height)) {
         return NaN;
+    }
+
+    return mass / (height ** 2);
 }
 let Button = document.getElementById("calcB");
 let Input = document.getElementById("inputValue");
