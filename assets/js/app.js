@@ -23,7 +23,7 @@ let result2 = document.getElementById("resultIMT");
 Button.addEventListener("click", function() {
     if(!isNaN(LeapYear(Input.value))){
         if(Input.value){
-            if(LeapYer(Input.value)){
+            if(LeapYear(Input.value)){
                 result.textContent='Год високосный'
             }
             else{
