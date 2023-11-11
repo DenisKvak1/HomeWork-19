@@ -46,26 +46,19 @@ Button2.addEventListener("click", function() {
     if(InputMASS.value && InputHeight.value){
         let imt=IMT(InputMASS.value,InputHeight.value/100)
         if(!isNaN(imt)){
-            switch (true) {
-                case (imt < 18.5):
-                    result2.textContent="Недостаточная масса тела (дефицит массы).";
-                    break;
-                case (imt >= 18.5 && imt <= 24.9):
-                    result2.textContent="Нормальная масса тела.";
-                    break;
-                case (imt >= 25 && imt <= 29.9):
-                    result2.textContent="Избыточная масса тела (предожирение).";
-                    break;
-                case (imt >= 30 && imt <= 34.9):
-                    result2.textContent="Ожирение I степени.";
-                    break;
-                case (imt >= 35 && imt <= 39.9):
-                    result2.textContent="Ожирение II степени.";
-                    break;   
-                case (imt >40):
-                    result2.textContent="Ожирение III степени (крайне высокий уровень ожирения).";
-                    break;                
-            }
+            if (imt < 18.5) {
+                result2.textContent = "Недостаточная масса тела (дефицит массы).";
+            } else if (imt >= 18.5 && imt <= 24.9) {
+                result2.textContent = "Нормальная масса тела.";
+            } else if (imt >= 25 && imt <= 29.9) {
+                result2.textContent = "Избыточная масса тела (предожирение).";
+            } else if (imt >= 30 && imt <= 34.9) {
+                result2.textContent = "Ожирение I степени.";
+            } else if (imt >= 35 && imt <= 39.9) {
+                result2.textContent = "Ожирение II степени.";
+            } else if (imt > 40) {
+                result2.textContent = "Ожирение III степени (крайне высокий уровень ожирения).";
+            }            
         }
         else{
             result2.textContent="Введите корректные данные";
