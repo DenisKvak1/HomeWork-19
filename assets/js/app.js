@@ -45,7 +45,7 @@ Button2.addEventListener("click", function() {
         let imt=IMT(InputMASS.value,InputHeight.value)
         if(InputHeight.value<2.6){
             if(!isNaN(imt)){
-                imt=imt.toFixed(2);
+                imt=imt.toFixed(1);
                 result3.textContent=`Ваш имт: ${imt}`;
                 if (imt < 16) {
                     result2.textContent = "Выраженный дефицит массы тела.";
