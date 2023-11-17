@@ -12,7 +12,7 @@ function IMT(mass, height) {
     if (isNaN(mass) || isNaN(height)) {
         return NaN;
     }
-    return Math.round((mass / (height ** 2))*100)/100;
+    return Math.round((mass / (height ** 2))*10)/10;
 }
 let Button = document.getElementById("calcB");
 let Input = document.getElementById("inputValue");
